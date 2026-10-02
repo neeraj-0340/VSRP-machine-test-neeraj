@@ -1,0 +1,95 @@
+:root {
+  --color-accent-orange: #f05423;
+  --color-accent-orange-hover: #d84517;
+  --color-text-white: #ffffff;
+  --color-text-muted: #d4d4d8;
+  --color-text-dim: #a1a1aa;
+
+  --color-bg-dark-overlay: rgba(10, 11, 14, 0.62);
+  --color-glass-pill: rgba(255, 255, 255, 0.15);
+  --color-glass-pill-hover: rgba(255, 255, 255, 0.25);
+  --color-glass-border: rgba(255, 255, 255, 0.18);
+
+  --font-primary: 'Manrope', sans-serif;
+  --font-heading: 'Nohemi', 'Outfit', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+
+  --header-height: 90px;
+  --container-max-width: 1360px;
+  --site-padding-x: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+section[id],
+footer[id],
+header[id] {
+  scroll-margin-top: 86px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #0d0e12;
+  color: var(--color-text-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: local('Nohemi'), local('Nohemi-SemiBold');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: local('Nohemi'), local('Nohemi-Medium');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dot-orange {
+  color: var(--color-accent-orange);
+}
