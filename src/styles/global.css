@@ -93,3 +93,15 @@ button {
 .dot-orange {
   color: var(--color-accent-orange);
 }
+
+@media (max-width: 1024px) {
+  :root {
+    --site-padding-x: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --site-padding-x: 20px;
+  }
+}
